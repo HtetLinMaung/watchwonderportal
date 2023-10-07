@@ -116,6 +116,9 @@ export default function OrdersList() {
             <th className="py-2 px-4 border-b">ID</th>
             <th className="py-2 px-4 border-b">Items</th>
             <th className="py-2 px-4 border-b">Total</th>
+            <th className="py-2 px-4 border-b">Customer</th>
+            <th className="py-2 px-4 border-b">Phone</th>
+            <th className="py-2 px-4 border-b">Email</th>
             <th className="py-2 px-4 border-b">Address</th>
             <th className="py-2 px-4 border-b">Note</th>
             <th className="py-2 px-4 border-b">Time</th>
@@ -135,6 +138,9 @@ export default function OrdersList() {
               </td>
               <td className="py-2 px-4 border-b">{order.item_counts}</td>
               <td className="py-2 px-4 border-b">{order.order_total}</td>
+              <td className="py-2 px-4 border-b">{order.user_name}</td>
+              <td className="py-2 px-4 border-b">{order.phone}</td>
+              <td className="py-2 px-4 border-b">{order.email}</td>
               <td className="py-2 px-4 border-b">{`${order.home_address}, ${order.street_address}, ${order.township}, ${order.ward}, ${order.city}, ${order.state}, ${order.postal_code}, ${order.country}`}</td>
               <td className="py-2 px-4 border-b">{order.note}</td>
               <td className="py-2 px-4 border-b">
