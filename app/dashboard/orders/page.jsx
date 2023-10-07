@@ -173,7 +173,10 @@ export default function OrdersList() {
         pageCounts={pageCounts}
         onPageChange={setPage}
         perPage={perPage}
-        onPerPageChange={setPerPage}
+        onPerPageChange={(p) => {
+          setPerPage(p);
+          setPage(1);
+        }}
       />
     </div>
   );

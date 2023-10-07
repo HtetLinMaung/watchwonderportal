@@ -111,7 +111,10 @@ export default function OrderItemsList({ params }) {
         pageCounts={pageCounts}
         onPageChange={setPage}
         perPage={perPage}
-        onPerPageChange={setPerPage}
+        onPerPageChange={(p) => {
+          setPerPage(p);
+          setPage(1);
+        }}
       />
     </div>
   );
